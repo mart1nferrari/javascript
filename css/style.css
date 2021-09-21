@@ -1,0 +1,51 @@
+/* header --------------------- bootstrap */
+.my-background {
+  background-color: #1B1B1B   !important;
+}
+
+.my-background .my-color-logo {
+  color: white !important;
+  /* fuente logo */
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30px !important;
+  /* ----------- */
+  margin-left: 1% !important;
+}
+
+.my-background .my-color {
+  color: white !important;
+  /* fuente logo */
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px !important;
+  /* ----------- */
+}
+
+.my-background .nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.my-background .my-space {
+  margin-left: 3% !important;
+}
+
+#fondo-verde {
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../imgs/plantas2.jpg);
+  background-size: cover;
+}
+
+#fondo-verde .titulo {
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */

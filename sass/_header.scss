@@ -1,0 +1,36 @@
+/* header --------------------- bootstrap */
+.my-background
+{
+    background-color: #1B1B1B   !important;
+
+    .my-color-logo
+    {
+        color: white !important;
+        /* fuente logo */
+        font-family: 'PT Sans', sans-serif;
+
+        font-size: 30px !important;
+        /* ----------- */
+        margin-left: 1% !important;
+    }
+    .my-color
+    {
+        color: white !important;
+        /* fuente logo */
+        font-family: 'PT Sans', sans-serif;
+
+        font-size: 20px !important;
+        /* ----------- */
+    }
+
+    .nav-item
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .my-space
+    {
+        margin-left: 3% !important;
+    }
+}

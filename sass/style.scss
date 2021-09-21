@@ -1,0 +1,29 @@
+@import 'header';
+@import 'variables';
+
+
+#fondo-verde
+{
+
+    height: 400px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../imgs/plantas2.jpg);
+    background-size: cover;
+
+    .titulo 
+    {
+        // vars
+        color: $colorblanco; 
+        font-family: $fuente;
+
+        font-size: 80px;
+        font-weight: 800;
+        
+    }
+    
+}
+
