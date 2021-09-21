@@ -25,6 +25,8 @@ class producto
 const pino = new producto({ id: 7, nombre: "pinos", precio: 1500});
 plantas.push(pino);
 
+
+
 //creo mi array para agregar items al carrito de compras
 let carrito = [];
 
@@ -42,9 +44,29 @@ const agregar = (nombreProducto) =>
     }
 }
 
+
+
+
+// DOM al html con un for recorriendo el array de objetos
+let plantasProducto = document.querySelector("#plantas")
+
+for (const planta of plantas)
+{
+    let li = document.createElement("li");
+    li.innerHTML = ` ${planta.nombre}: ${planta.precio}$`;
+    plantasProducto.appendChild(li);
+}
+
+
+
+
+
+
+
+
 //prompt para que agregues el producto
 /* let agregoProducto = prompt(" agregue el producto que quieras: ").toLocaleLowerCase(); */
 
-agregar(agregoProducto);
-console.log(carrito);
+/* agregar(agregoProducto);
+console.log(carrito); */
 
