@@ -23,7 +23,9 @@ class producto
 
 //agrego productos
 const pino = new producto({ id: 7, nombre: "pinos", precio: 1500});
+const rosas = new producto( { id: 8, nombre: "rosas", precio: 300});
 plantas.push(pino);
+plantas.push(rosas);
 
 
 
@@ -44,9 +46,6 @@ const agregar = (nombreProducto) =>
     }
 }
 
-
-
-
 // DOM al html con un for recorriendo el array de objetos
 let plantasProducto = document.querySelector("#plantas")
 
@@ -55,6 +54,15 @@ for (const planta of plantas)
     let li = document.createElement("li");
     li.innerHTML = ` ${planta.nombre}: ${planta.precio}$`;
     plantasProducto.appendChild(li);
+}
+
+//guardo local Json
+
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+
+for (const planta of plantas)
+{
+    guardarLocal(planta.id, JSON.stringify(planta));
 }
 
 
